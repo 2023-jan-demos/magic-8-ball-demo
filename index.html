@@ -30,15 +30,24 @@
         </header>
 
         <main>
+
+            <audio controls autoplay muted>
+                <source src="./assets/piano.mp3" type="audio/mp3">
+                
+              Your browser does not support the audio element.
+              </audio>
+
             <section id="prompt" class="prompt">
-                <p>What do you want to know?</p>
-                <input type="text" />
+                <h1>What do you want to know?</h1>
+                <input class="submit-input" type="text" placeholder="Will I get an A?" />
                 <button class="button" id="submit">Submit</button>
             </section>
             <section id="fortune" class="fortune hide">
-                <img class="image" src="./assets/8-ball.png" alt="magic 8 ball" />
-                <p id="answer"></p>
-                <button class="button" id="reset">Ask again!</button>
+                <div class="fortune-wrapper">
+                    <img class="image" src="./assets/8-ball.png" alt="magic 8 ball" />
+                    <p id="answer"></p>
+                    <button class="button" id="reset">Ask again!</button>
+                </div>
             </section>
         </main>
     </body>
